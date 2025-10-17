@@ -7,7 +7,7 @@ arlo = robot.Robot()
 print ("Running ...")
 
 
-lefspeed = 83
-rightspeed = 50
+lefspeed = 43
+rightspeed = 90
 print(arlo.go_diff(lefspeed, rightspeed, 1, 1))  # Forward
 sleep(7)
