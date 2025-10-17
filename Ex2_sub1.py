@@ -15,10 +15,12 @@ while driving:
         arlo.go_diff(80, 80, 1, 1)
     elif arlo.read_left_ping_sensor() < 300:
         arlo.rotate_robot(-90)
-        arlo.go_diff(80, 80, 1, 1)  # Forward
+        sleep(0.5)
+        arlo.go_diff(80, 80, 1, 1)
     elif arlo.read_right_ping_sensor() < 300:
         arlo.rotate_robot(90)
-        arlo.go_diff(80, 80, 1, 1)  # Forward
+        sleep(0.5)
+        arlo.go_diff(80, 80, 1, 1)
         
         
 print ("Finished")
