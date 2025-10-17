@@ -16,3 +16,5 @@ while i < 3:
     print(arlo.go_diff(rightspeed, lefspeed, 1, 1))  # Forward
     sleep(8)
     i += 1
+    
+print("Done")
