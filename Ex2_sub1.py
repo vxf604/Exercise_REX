@@ -6,8 +6,8 @@ arlo = robot.Robot()
 
 print ("Running ...")
 
-driving = False
-while driving == True:
+driving = True
+while driving:
     if arlo.read_front_ping_sensor() < 200:
         arlo.rotate_robot(90)
         print(arlo.go_diff(80, 80, 1, 1))  # Forward
@@ -17,9 +17,6 @@ while driving == True:
     elif arlo.read_right_ping_sensor() < 200:
         arlo.rotate_robot(90)
         print(arlo.go_diff(80, 80, 1, 1))  # Forward
-    else:
-        driving = False
-        
         
         
 print ("Finished")
