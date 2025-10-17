@@ -10,4 +10,4 @@ print ("Running ...")
 lefspeed = 83
 rightspeed = 50
 print(arlo.go_diff(lefspeed, rightspeed, 1, 1))  # Forward
-sleep(2)
+sleep(7)
