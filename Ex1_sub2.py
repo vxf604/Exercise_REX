@@ -17,4 +17,4 @@ while i < 3:
     sleep(8)
     i += 1
     
-print("Done")
+print("Finished")
