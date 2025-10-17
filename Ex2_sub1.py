@@ -6,7 +6,7 @@ arlo = robot.Robot()
 
 print ("Running ...")
 
-driving = True
+driving = False
 while driving == True:
     if arlo.read_front_ping_sensor() < 200:
         arlo.rotate_robot(90)
