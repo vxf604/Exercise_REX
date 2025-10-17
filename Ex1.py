@@ -6,5 +6,8 @@ arlo = robot.Robot()
 
 print ("Running ...")
 
-print(arlo.go_diff(80, 80, 1, 1))  # Forward
+lefspeed = 85
+rightspeed = 80
+
+print(arlo.go_diff(lefspeed, rightspeed, 1, 1))  # Forward
 sleep(2)
