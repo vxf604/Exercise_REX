@@ -16,7 +16,7 @@ rightspeed = 80
 # sleep(0.6)
 
 
-for i in range (5):
+for i in range (4):
     print(arlo.drive_forward_meter(1, lefspeed, rightspeed))  # Forward
     print(arlo.rotate_robot(-90))  # Turn right
     
