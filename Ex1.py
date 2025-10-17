@@ -13,4 +13,4 @@ print(arlo.go_diff(lefspeed, rightspeed, 1, 1))  # Forward
 sleep(2)
 
 print(arlo.go_diff(lefspeed, rightspeed, 0, 1))  # Turn right
-sleep(0.5)
+sleep(0.75)
