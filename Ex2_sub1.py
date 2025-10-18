@@ -12,15 +12,30 @@ while driving:
     if arlo.read_front_ping_sensor() < 300:
         arlo.rotate_robot(180)
         sleep(0.5)
-        arlo.go_diff(80, 80, 0, 1)
+        if arlo.read_front_ping_sensor() < 150:
+            print("Too close")
+            arlo.go_diff(80, 80, 0, 1)
+            sleep(0.5)
+            arlo.stop()
+            continue
     elif arlo.read_left_ping_sensor() < 300:
         arlo.rotate_robot(90)
         sleep(0.5)
-        arlo.go_diff(80, 80, 0, 1)
+        if arlo.read_front_ping_sensor() < 150:
+            print("Too close")
+            arlo.go_diff(80, 80, 0, 1)
+            sleep(0.5)
+            arlo.stop()
+            continue
     elif arlo.read_right_ping_sensor() < 300:
         arlo.rotate_robot(-90)
         sleep(0.5)
-        arlo.go_diff(80, 80, 1, 0)
+        if arlo.read_front_ping_sensor() < 150:
+            print("Too close")
+            arlo.go_diff(80, 80, 0, 1)
+            sleep(0.5)
+            arlo.stop()
+            continue
         
         
 print ("Finished")
